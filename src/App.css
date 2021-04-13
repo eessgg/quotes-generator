@@ -1,0 +1,104 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 48px;
+}
+
+.quotes-app {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.quotes {
+  background-color: #fff;
+  width: 300px;
+  padding: 24px;
+  margin: 24px 0;
+  text-align: center;
+  position: relative;
+}
+
+.quote-text {
+  font-weight: 600;
+  color: #004298;
+}
+
+.quote-text::before {
+  content: '"';
+}
+.quote-text::after {
+  content: '"';
+}
+
+.quote-author {
+  color: #ee469d;
+}
+.quote-author::before {
+  content: ' - ';
+}
+.quote-author::after {
+  content: ' - ';
+}
+
+
+
+.btn{
+  background-color: #004298;
+  border: none;
+  padding: 12px 18px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-quote {
+  background-color: #004298;
+}
+
+.btn-share {
+  background-color: #ee469d;
+  padding: 12px 24px;
+  bottom: -40px;
+  transform: translate(-50%);
+  position: absolute; 
+}
+
+.btn-quote:hover {
+  animation: effect 0.4s ease;
+
+}
+
+
+@keyframes effect {
+  0% {
+      transform: translateX(0px) rotate(0deg);
+  }
+
+  20% {
+      transform: translateX(-4px) rotate(-4deg);
+  }
+
+  40% {
+      transform: translateX(-2px) rotate(-2deg);
+  }
+
+  60% {
+      transform: translateX(4px) rotate(4deg);
+  }
+
+  80% {
+      transform: translateX(2px) rotate(2deg);
+  }
+
+  100% {
+      transform: translateX(0px) rotate(0deg);
+  }
+}
+
